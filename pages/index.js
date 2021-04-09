@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import BaseLayout from '../components/layouts/BaseLayout';
 import { Button, Container } from 'reactstrap';
@@ -12,4 +13,3 @@ export default class Index extends Component {
 			</BaseLayout>
 		);
 	}
-}
