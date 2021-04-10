@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import BaseLayout from '../components/layouts/BaseLayout';
 import { Container, Row, Col } from 'reactstrap';
 import Typed from 'react-typed';
-import ReactTyped from 'react-typed';
+import BasePage from '../components/BasePage';
 export default class Index extends Component {
 	constructor(props) {
 		super(props);

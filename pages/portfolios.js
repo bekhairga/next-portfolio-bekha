@@ -3,7 +3,7 @@ import BaseLayout from '../components/layouts/BaseLayout';
 // import Link from "next/link";
 import { Link } from '../routes';
 import axios from 'axios';
-
+import BasePage from '../components/BasePage';
 export default class Portfolios extends Component {
 	constructor(props) {
 		super(props);
@@ -33,8 +33,10 @@ export default class Portfolios extends Component {
 		const { posts } = this.props;
 		return (
 			<BaseLayout>
-				<h2>Portfolios</h2>
-				<ul>{this.renderPosts(posts)}</ul>
+				<BasePage>
+					<h2>Portfolios</h2>
+					<ul>{this.renderPosts(posts)}</ul>
+				</BasePage>
 			</BaseLayout>
 		);
 	}

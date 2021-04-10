@@ -1,5 +1,6 @@
 @import './shared/fonts';
 @import './index';
+@import './shared/header';
 * {
 	font-family: 'Montserrat', 'Helvetica', sans-serif;
 }
@@ -12,5 +13,12 @@ body {
 	font-size: 31px;
 	font-weight: bold;
 	letter-spacing: 2px;
+	color: #fff;
+}
+.absolute {
+	position: absolute;
+}
+.base-page {
+	padding-top: 115px;
 	color: #fff;
 }

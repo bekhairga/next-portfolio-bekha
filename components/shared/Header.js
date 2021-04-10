@@ -8,7 +8,6 @@ import {
 	Nav,
 	NavItem,
 	NavLink,
-	NavbarText,
 } from 'reactstrap';
 
 const Header = (props) => {
@@ -18,38 +17,45 @@ const Header = (props) => {
 
 	return (
 		<div>
-			<Navbar color='light' light expand='md'>
-				<NavbarBrand href='/'>BekhaIrga</NavbarBrand>
+			<Navbar
+				className='port-navbar port-default absolute'
+				color='light'
+				dark
+				expand='md'
+				style={{ backgroundColor: 'transparent!important' }}
+			>
+				<NavbarBrand className='port-navbar-brand' href='/'>
+					BekhaIrga
+				</NavbarBrand>
 				<NavbarToggler onClick={toggle} />
 				<Collapse isOpen={isOpen} navbar>
 					<Nav className='ml-auto' navbar>
-						<NavItem>
+						<NavItem className='port-navbar-item'>
 							<Link href='/'>
-								<a className='nav-link'>Home</a>
+								<a className='nav-link port-navbar-link'>Home</a>
 							</Link>
 						</NavItem>
-						<NavItem>
+						<NavItem className='port-navbar-item'>
 							<Link href='/about'>
-								<a className='nav-link'>About</a>
+								<a className='nav-link port-navbar-link'>About</a>
 							</Link>
 						</NavItem>
-						<NavItem>
+						<NavItem className='port-navbar-item'>
 							<Link href='/portfolios'>
-								<a className='nav-link'>Portfolios</a>
+								<a className='nav-link port-navbar-link'>Portfolios</a>
 							</Link>
 						</NavItem>
-						<NavItem>
+						<NavItem className='port-navbar-item'>
 							<Link href='/blogs'>
-								<a className='nav-link'>Blogs</a>
+								<a className='nav-link port-navbar-link'>Blogs</a>
 							</Link>
 						</NavItem>
-						<NavItem>
+						<NavItem className='port-navbar-item'>
 							<Link href='/cv'>
-								<a className='nav-link'>CV</a>
+								<a className='nav-link port-navbar-link'>CV</a>
 							</Link>
 						</NavItem>
 					</Nav>
-					<NavbarText>Simple Text</NavbarText>
 				</Collapse>
 			</Navbar>
 		</div>
